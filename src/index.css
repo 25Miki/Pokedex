@@ -1,0 +1,10 @@
+.pokedex {
+    height: 500px;
+    width: 500px;
+    background-image: url("pokedex.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.name {
+    text-transform: capitalize;
+}

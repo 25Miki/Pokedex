@@ -4,15 +4,14 @@ const App = () => {
   const [pokemonList, setPokemonList] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Input para el término de búsqueda
   const handleSearchChange = event => {
     setSearchTerm(event.target.value);
   };
 
   const filteredData = pokemonList.filter(pokemon => {
     return (
-      pokemon.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      pokemon.number.toString().includes(searchTerm)
+      pokemon.name.toLowerCase() === (searchTerm.toLowerCase()) ||
+      pokemon.number.toString() === searchTerm
     );
   });
 
@@ -25,14 +24,10 @@ const App = () => {
         const getImage = number => {
           return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${number}.png`;
         };
-        const getDescription =  number => {
-            return `https://pokeapi.co/api/v2/pokemon-species/${number}/`;
-        }
         const pokemonData = data.results.map((pokemon, index) => ({
           name: pokemon.name,
           number: index + 1,
-          image: getImage(index + 1),
-          description: getDescription(index +1)
+          image: getImage(index + 1)
         }));
         setPokemonList(pokemonData);
       })
@@ -48,13 +43,15 @@ const App = () => {
         value={searchTerm}
         onChange={handleSearchChange}
       />
+
+      <div className='pokedex'>
       {filteredData.map(pokemon => (
         <div key={pokemon.name}>
-          <p>{pokemon.name}</p>
-          <p>{pokemon.description}</p>
-          <img src={pokemon.image} alt={pokemon.name} />
+          <p className='name'>{pokemon.name}</p>
+          <img className='sprite' src={pokemon.image} alt={pokemon.name} />
         </div>
       ))}
+      </div>
     </div>
   );
 };
