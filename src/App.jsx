@@ -10,8 +10,8 @@ const App = () => {
 
   const filteredData = pokemonList.filter(pokemon => {
     return (
-      pokemon.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      pokemon.number.toString().includes(searchTerm)
+      pokemon.name.toLowerCase() === (searchTerm.toLowerCase()) ||
+      pokemon.number.toString() === (searchTerm)
     );
   });
 
@@ -29,7 +29,9 @@ const App = () => {
 
         const pokemonData = await Promise.all(
           data.results.map(async (pokemon, index) => {
-            const speciesResponse = await fetch(pokemon.url);
+            const responsePokemon = await fetch(pokemon.url);
+            const dataPokemon = await responsePokemon.json();
+            const speciesResponse = await fetch(dataPokemon.species.url);
             const speciesData = await speciesResponse.json();
             const flavorText = speciesData.flavor_text_entries.find(
               entry => entry.language.name === 'en'
@@ -60,14 +62,18 @@ const App = () => {
         value={searchTerm}
         onChange={handleSearchChange}
       />
-      {filteredData.map(pokemon => (
-        <div key={pokemon.name}>
-          <p>{pokemon.name}</p>
-          <p>{pokemon.number}</p>
-          <p>{pokemon.flavorText}</p>
-          <img src={pokemon.image} alt={pokemon.name} />
-        </div>
-      ))}
+      <div className='pokedex'>
+        {filteredData.map(pokemon => (       
+            <div key={pokemon.name}>
+              <p className='name'>{pokemon.name}</p>
+              <p className='number'>{pokemon.number}</p>
+              <p>{pokemon.flavorText}</p>
+              <div className='screen'>
+                <img className='sprite' src={pokemon.image} alt={pokemon.name} />
+              </div>
+            </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,0 +1,46 @@
+.pokedex {
+    position: relative;
+    background-image: url(pokedex.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+
+}
+
+.name {
+    text-transform: capitalize;
+    color: white;
+    z-index: 4;
+    position: absolute;
+    right: 90px;
+    top: 120px;
+}
+
+.number {
+    position: absolute;
+    z-index: 5;
+    bottom: 175px;
+    left: 40px;
+}
+
+.screen {
+    z-index: 2;
+    top: 110px;
+    left: 42px;
+    position: absolute;
+    background-color: white;
+    height: 108px;
+    width: 165px;
+
+}
+
+.sprite {
+    z-index: 3;
+    
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    height: 100px;
+    width: 100px;
+}
