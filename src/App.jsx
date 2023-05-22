@@ -4,7 +4,6 @@ const App = () => {
   const [pokemonList, setPokemonList] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Input para el término de búsqueda
   const handleSearchChange = event => {
     setSearchTerm(event.target.value);
   };
@@ -17,28 +16,41 @@ const App = () => {
   });
 
   useEffect(() => {
-    const apiURL = 'https://pokeapi.co/api/v2/pokemon?limit=251';
+    const fetchPokemonData = async () => {
+      const apiURL = 'https://pokeapi.co/api/v2/pokemon?limit=151';
 
-    fetch(apiURL)
-      .then(response => response.json())
-      .then(data => {
+      try {
+        const response = await fetch(apiURL);
+        const data = await response.json();
+
         const getImage = number => {
           return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${number}.png`;
         };
-        const getDescription =  number => {
-            return `https://pokeapi.co/api/v2/pokemon-species/${number}/`;
-        }
-        const pokemonData = data.results.map((pokemon, index) => ({
-          name: pokemon.name,
-          number: index + 1,
-          image: getImage(index + 1),
-          description: getDescription(index +1)
-        }));
+
+        const pokemonData = await Promise.all(
+          data.results.map(async (pokemon, index) => {
+            const speciesResponse = await fetch(pokemon.url);
+            const speciesData = await speciesResponse.json();
+            const flavorText = speciesData.flavor_text_entries.find(
+              entry => entry.language.name === 'en'
+            ).flavor_text;
+
+            return {
+              name: pokemon.name,
+              number: index + 1,
+              image: getImage(index + 1),
+              flavorText: flavorText
+            };
+          })
+        );
+
         setPokemonList(pokemonData);
-      })
-      .catch(error => {
+      } catch (error) {
         console.error(error);
-      });
+      }
+    };
+
+    fetchPokemonData();
   }, []);
 
   return (
@@ -51,7 +63,8 @@ const App = () => {
       {filteredData.map(pokemon => (
         <div key={pokemon.name}>
           <p>{pokemon.name}</p>
-          <p>{pokemon.description}</p>
+          <p>{pokemon.number}</p>
+          <p>{pokemon.flavorText}</p>
           <img src={pokemon.image} alt={pokemon.name} />
         </div>
       ))}
