@@ -1,37 +1,52 @@
+.all {
+    display: flex;
+    font-family: 'Press Start 2P', cursive;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .pokedex {
+
     position: relative;
-    background-image: url(PokedexEntera.svg);
+    background-image: url(PokedexEntera2.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
-    width: 500px;
+    height: 650px;
+    width: 650px;
 
 }
 
 .name {
     text-transform: capitalize;
-    color: white;
+    font-size: 0.6rem;
     z-index: 4;
     position: absolute;
-    right: 90px;
-    top: 120px;
+    left: 94px;
+    bottom: 210px;
+    color: white;
 }
 
 .number {
     position: absolute;
+    font-size: 0.7rem;
+    color: white;
     z-index: 5;
-    bottom: 175px;
-    left: 40px;
+    top: 190px;
+    left: 90px;
 }
 
-.screen {
-    z-index: 2;
-    top: 110px;
-    left: 42px;
+.description {
     position: absolute;
-    background-color: white;
-    height: 108px;
-    width: 165px;
+    width: 200px;
+    font-size: 0.6rem;
+    color: white;
+    z-index: 5;
+    top: 155px;
+    right: 65px;
+    padding: 0.5rem;
 
 }
 
@@ -39,8 +54,8 @@
     z-index: 3;
     
     position: absolute;
-    left: 30px;
-    top: 10px;
-    height: 100px;
-    width: 100px;
+    left: 100px;
+    top: 185px;
+    height: 140px;
+    width: 140px;
 }

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="668" height="510" fill="none" viewBox="0 0 668 510">
+  <g class="PokedexEntera">
+    <path fill="#fff" d="M0 0h668v510H0z"/>
+    <g class="Pokedex">
+      <path fill="#FF4B4B" d="M59 33h291.556a3 3 0 0 1 3 3v41.55h54.507a50 50 0 0 1 35.622 14.913l35.207 35.745a50 50 0 0 0 35.622 14.913H624.5a3 3 0 0 1 3 3V484a3 3 0 0 1-3 3H59c-16.569 0-30-13.431-30-30V63.033C29 46.464 42.431 33 59 33Z"/>
+      <path stroke="#C40202" stroke-width="3" d="M353.556 487V77.55m0 409.45H624.5a3 3 0 0 0 3-3V146.121a3 3 0 0 0-3-3H514.514a50 50 0 0 1-35.622-14.913l-35.207-35.745a50 50 0 0 0-35.622-14.914h-54.507m0 409.451h-41.248m41.248-409.45V36a3 3 0 0 0-3-3H59c-16.569 0-30 13.465-30 30.033v80.088M312.308 487H59c-16.569 0-30-13.431-30-30V143.121M312.308 487V77.55h-59.757a50.002 50.002 0 0 0-35.183 14.472l-36.984 36.626a50.001 50.001 0 0 1-35.183 14.473H29"/>
+    </g>
+    <path fill="#E23333" stroke="#C40202" stroke-width="3" d="M147.649 147.966 34 148.81V453c0 16.569 13.431 30 30 30h248V82.995l-56.644-.726a50.003 50.003 0 0 0-35.846 14.49l-37.028 36.714a49.997 49.997 0 0 1-34.833 14.493Z" class="Vector 3"/>
+    <path fill="#E23333" stroke="#C40202" stroke-width="3" d="m405.45 81.3-51.45.71V483h269V148.168H513.035a49.998 49.998 0 0 1-36.032-15.334l-34.831-36.205A49.998 49.998 0 0 0 405.45 81.3Z" class="Vector 4"/>
+    <path fill="#D9D9D9" stroke="#7F7F7F" stroke-width="3" d="M279 358H92c-16.569 0-30-13.431-30-30V168h217v190Z" class="Vector 2"/>
+    <rect width="171" height="135" x="85" y="196" fill="#00B1A6" class="Pantalla" rx="3"/>
+    <circle cx="88" cy="92" r="25.5" fill="#D9D9D9" stroke="#7A7676" class="Ellipse 1"/>
+    <circle cx="88" cy="92" r="20.5" fill="#41F0F0" stroke="#11CACA" class="Ellipse 2"/>
+    <circle cx="63" cy="395" r="14" fill="#5F5C5C" stroke="#545252" stroke-width="2" class="Ellipse 3"/>
+    <rect width="48" height="6" x="92" y="384" fill="#BC0303" stroke="#545454" stroke-width="2" class="Rectangle 1" rx="3"/>
+    <rect width="48" height="6" x="160" y="384" fill="#41F0F0" stroke="#585656" stroke-width="2" class="Rectangle 2" rx="3"/>
+    <rect width="35" height="6" x="563" y="366" fill="#737373" stroke="#585656" stroke-width="2" class="Rectangle 17" rx="3"/>
+    <rect width="35" height="6" x="521" y="366" fill="#737373" stroke="#585656" stroke-width="2" class="Rectangle 18" rx="3"/>
+    <rect width="117" height="43" x="87.5" y="416.5" fill="#5BB500" stroke="#48850C" stroke-width="3" class="Name" rx="3.5"/>
+    <path fill="#323232" d="M222 415a2 2 0 0 1 2-2h21v23h-21a2 2 0 0 1-2-2v-19Zm42 0h19a2 2 0 0 1 2 2v17a2 2 0 0 1-2 2h-19v-21Z" class="Vector"/>
+    <path fill="#404040" d="M243 412h21v21h-21z" class="Abajo"/>
+    <path fill="#323232" d="M243 436h21v19a2 2 0 0 1-2 2h-17a2 2 0 0 1-2-2v-19Z" class="Down"/>
+    <path fill="#404040" d="M222 414a2 2 0 0 1 2-2h19v21h-19a2 2 0 0 1-2-2v-17Z" class="Left"/>
+    <path fill="#404040" d="M264 412h19a2 2 0 0 1 2 2v17a2 2 0 0 1-2 2h-19v-21Z" class="Right"/>
+    <path fill="#404040" d="M243 433h21v19a2 2 0 0 1-2 2h-17a2 2 0 0 1-2-2v-19Z" class="Down"/>
+    <path fill="#404040" d="M243 393a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v19h-21v-19Z" class="Up"/>
+    <rect width="224" height="90" x="374.5" y="168.5" fill="#404040" stroke="#292828" class="Description" rx="4.5"/>
+    <path fill="#41F0F0" stroke="#02A4A4" d="M379 278.5h39.5v33h-44V283a4.5 4.5 0 0 1 4.5-4.5Z" class="Rectangle 5"/>
+    <path fill="#41F0F0" stroke="#02A4A4" d="M419.5 278.5h44v33h-44z" class="Rectangle 6"/>
+    <path fill="#41F0F0" stroke="#02A4A4" d="M464.5 278.5h44v33h-44z" class="Rectangle 7"/>
+    <path fill="#41F0F0" stroke="#02A4A4" d="M509.5 278.5h44v33h-44z" class="Rectangle 8"/>
+    <path fill="#41F0F0" stroke="#02A4A4" d="M554.5 278.5H594a4.5 4.5 0 0 1 4.5 4.5v28.5h-44v-33Z" class="Rectangle 9"/>
+    <path fill="#41F0F0" stroke="#02A4A4" d="M374.5 312.5h44v33H379a4.5 4.5 0 0 1-4.5-4.5v-28.5Z" class="Rectangle 10"/>
+    <path fill="#41F0F0" stroke="#02A4A4" d="M419.5 312.5h44v33h-44z" class="Rectangle 11"/>
+    <path fill="#41F0F0" stroke="#02A4A4" d="M464.5 312.5h44v33h-44z" class="Rectangle 12"/>
+    <path fill="#41F0F0" stroke="#02A4A4" d="M509.5 312.5h44v33h-44z" class="Rectangle 13"/>
+    <path fill="#41F0F0" stroke="#02A4A4" d="M554.5 312.5h44V341a4.5 4.5 0 0 1-4.5 4.5h-39.5v-33Z" class="Rectangle 14"/>
+    <path fill="#D9D9D9" d="M374 370a5 5 0 0 1 5-5h40v30h-40a5 5 0 0 1-5-5v-20Z" class="Rectangle 15"/>
+    <path fill="#D9D9D9" d="M420 365h40.5a5 5 0 0 1 5 5v20a5 5 0 0 1-5 5H420v-30Z" class="Rectangle 16"/>
+    <rect width="75" height="32" x="403" y="429" fill="#252424" class="Rectangle 21" rx="5"/>
+    <rect width="75" height="32" x="494" y="429" fill="#252424" class="Rectangle 22" rx="5"/>
+    <rect width="75" height="32" x="403" y="427" fill="#3E3C3C" class="Rectangle 19" rx="5"/>
+    <rect width="75" height="32" x="494" y="427" fill="#3E3C3C" class="Rectangle 20" rx="5"/>
+    <circle cx="588" cy="395" r="10.5" fill="#F9FD31" stroke="#FDB831" class="Ellipse 4"/>
+    <g class="Ellipse 5">
+      <circle cx="159.5" cy="75.5" r="4.5" fill="#86FC10"/>
+      <circle cx="159.5" cy="75.5" r="4" stroke="#000" stroke-opacity=".5"/>
+    </g>
+    <g class="Ellipse 6">
+      <path fill="#F9FD31" d="M147 75.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/>
+      <path stroke="#000" stroke-opacity=".5" d="M146.5 75.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/>
+    </g>
+    <g class="Ellipse 7">
+      <path fill="#E70303" d="M131 75.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"/>
+      <path stroke="#000" stroke-opacity=".5" d="M130.5 75.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/>
+    </g>
+    <path stroke="#C40202" stroke-width="3" d="M311.5 136.5a56.632 56.632 0 0 1 42.068-.171l.432.171" class="Vector 5"/>
+    <path stroke="#C40202" stroke-width="3" d="M311.5 149.5a56.632 56.632 0 0 1 42.068-.171l.432.171" class="Vector 6"/>
+    <path stroke="#C40202" stroke-width="3" d="M312 409.5a56.632 56.632 0 0 1 42.068-.171l.432.171" class="Vector 7"/>
+    <path stroke="#C40202" stroke-width="3" d="M312 422.5a56.632 56.632 0 0 1 42.068-.171l.432.171" class="Vector 8"/>
+  </g>
+</svg>

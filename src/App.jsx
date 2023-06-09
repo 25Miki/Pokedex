@@ -56,7 +56,9 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className='all'>
+      <h1>POKEDEX</h1>
+      <h3>Insert name or number</h3>
       <input
         type="text"
         value={searchTerm}
@@ -67,8 +69,8 @@ const App = () => {
             <div key={pokemon.name}>
               <p className='name'>{pokemon.name}</p>
               <p className='number'>{pokemon.number}</p>
-              <p>{pokemon.flavorText}</p>
-              <div className='screen'>
+              <p className='description'>{pokemon.flavorText}</p>
+              <div>
                 <img className='sprite' src={pokemon.image} alt={pokemon.name} />
               </div>
             </div>
